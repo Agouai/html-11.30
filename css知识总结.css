@@ -1,0 +1,30 @@
+#demo{
+    width: 100px;
+    height: 300px;
+    border: 1px solid red
+    
+    }
+#demo:hover{
+    width: 200px;
+}
+
+#demo1{
+    width: 100px;
+    height: 300px;
+    border: 1px solid red;
+}
+#demo1:hover{
+    animation: zidong 5s ;
+
+}
+
+@keyframes zidong {
+    0%{
+        transform: none;
+    }
+    66.66%{transform: translateX(200px);}
+    100%{
+        transform: translateX(200px) translateY(100px);
+    }
+}
+    

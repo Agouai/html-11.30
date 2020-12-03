@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css知识总结.css" />
+</head>
+
+<body>
+    <h1>
+        CSS知识总结
+    </h1>
+
+    <h2>
+        <h3>
+            浏览器的渲染原理
+        </h3>
+        <p>
+            浏览器的渲染原理分为6个步骤
+        <ul>
+            <li>根据html构建html的框架树干</li>
+            <li>根据css构建css框架树干</li>
+            <li>将两棵树合并成一整颗树干</li>
+            <li>layout会计算出文档流，盒模型，计算每个内容的位置大小，然后将计算出来的结果呈现在屏幕上</li>
+            <li>上色阶段，给上一部计算出各个位置大小的内容进行上色，文字，边框，背景</li>
+            <li>最后将所有已经完成的内容整合成一个图层呈现出来</li>
+        </ul>
+        </p>
+
+        <h3>
+            CSS 动画的两种做法（transition 和 animation）
+        </h3>
+        <p>
+            transition方法是自动补充中间过程的帧，如果一开始设置了第一帧和最后一针那么，这个样式会自动补齐其他所有。
+        </p>
+        <div id="demo">这里我写了这个transition但是却在vscode里没有这个命令我不知道是为什么
+            transition里有四个属性（属性名，时长，过度方式，延迟）
+        </div>
+        <p>animation的方法</p>
+        <div id="demo1">要设置几个关键帧然后每个关键帧设置属性它就会自动添加过程,我这里写的是hover属性实际上非常蛋疼要鼠标一直
+            跟着边框走 </div>
+
+
+    </h2>
+</body>
+
+</html>
